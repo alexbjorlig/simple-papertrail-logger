@@ -20,7 +20,7 @@ See source code for properties and defaults. Happy coding 🍻
 
 ```typescript
 
-const logger = new SimplePapertrailLogger({papertrailToken: context.secrets.LOG_KEY})
+const logger = new SimplePapertrailLogger({papertrailToken: context.secrets.LOG_KEY, logIdentifier: event.actor.hostname})
 try {
     logger.addMessage('test this out');
 } catch (err) {
