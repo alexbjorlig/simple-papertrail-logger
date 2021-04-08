@@ -1,6 +1,6 @@
 {
   "name": "simple-papertrail-logger",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Small utility package to publish log messages to papertrail",
   "main": "dist/index",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "url": "https://github.com/alexbjorlig/simple-papertrail-logger"
-},
+  },
   "scripts": {
     "test": "jest"
   },
