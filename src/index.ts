@@ -29,7 +29,7 @@ declare interface SimplePapertrailLoggerOpts {
 
 export class SimplePapertrailLogger {
 
-    private uniqueId: string;
+    public uniqueId: string;
     private messageBuffer: string;
     private opts: SimplePapertrailLoggerOpts;
 

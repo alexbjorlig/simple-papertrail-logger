@@ -29,4 +29,6 @@ try {
     logger.sendMessages()
     .then((result) => console.log(result)) // <== Make the result of the papertrail logs visible to Auth0 logs
 }
+
+If you need the unique id added to every log statement, you can simply acceess `logger.uniqueId` to get the 
 ```
