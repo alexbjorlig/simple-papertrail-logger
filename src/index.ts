@@ -44,11 +44,8 @@ export class SimplePapertrailLogger {
         if (!message.trim()) {
             return;
         }
-        let newMessage = `${this.uniqueId}`;
-        if (this.opts.logIdentifier) {
-            newMessage += ` ${this.opts.logIdentifier}`;
-        }
-        newMessage += ` | ${message}${EOL}`
+
+        let newMessage = `<14>1 - ${this.opts.logIdentifier} ${this.uniqueId} - - - ${message}${EOL}`;
         this.messageBuffer += newMessage;
     }
 
